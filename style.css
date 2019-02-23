@@ -1,75 +1,89 @@
 /* DON'T DELETE THIS */
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*,*:before,*:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  margin: 0;
+    margin: 0;
+    background-color: dimgrey; 
 }
 
 /* Clear Float */
 
-.cf:before,.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .cf:after {
-  clear: both;
+    clear: both;
 }
 
 .cf {
-  *zoom: 1;
+    *zoom: 1;
 }
 
 /* end */
 
 [contenteditable]:focus {
-  outline: 0px solid transparent;
+    outline: 0px solid transparent;
 }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 1em;
-  color: white;
-  overflow: hidden;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    overflow: hidden;
 }
 
 #homepage {
-  width: 100vw;
-  height: 95vh;
-  position: relative;
-  background-color: blue;
+    width: 100vw;
+    height: 92vh;
+    position: relative;
+    background-color: #322C2E;
+    padding-left: 8vw;
+    padding-top: 4vh;
 }
 
 #slider {
-  height: 5vh;
-  width: 100%;
-  position: relative;
-  bottom: 0;
-  text-align: center;
-  background-color: blue;
+    height: 8vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: left;
+    font-size: 3.5vh;
+    background-color: #F6403A;
 }
 
 #slider-text {
-  padding-top: 20px;
+    padding-top: 2vh;
+    padding-bottom: 14px;
+    padding-left: 8vw;
+}
+
+.textToggle {
+    padding-top: 2vh;
+    padding-left: 8vw;
 }
 
 .full {
-  height: 100vh;
+    height: 100vh;
 }
 
 .up {
-  height: 40px;
-  transform: rotate(-180deg);
+    height: 40px;
+    transform: rotate(-180deg);
 }
 
 /* #chat-cont {
@@ -82,83 +96,161 @@ body {
 } */
 
 #text-box-cont {
-  height: 5vh;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  border: solid blue 2px;
+    height: 5vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    border: solid blue 2px;
 }
 
 #prompt {
-  font-size: 2em;
+    font-size: 1.5em;
+    color: #00BCB9;
+    height: 11vh;
 }
 
 
 #date-location-cont {
-  height: 55%;
-  width: 80%;
+    height: 55%;
+    width: 80%;
 }
 
 .date-location {
-  height: 30%;
- margin-bottom: 3.33%;
-  border: 1px solid white;
+    height: 30%;
+    margin-bottom: 3.33%;
+    border: 1px solid white;
 }
 
 #clock {
-  text-align: left;
-  font-size: 1.8em;
+    text-align: left;
+    font-size: 1.8em;
+    color: #F6403A;
+}
+
+#clock-text {
+    font-size: 1.5em;
+    color: #00BCB9;
+}
+
+#livestream-link {
+    width: 90%;
+    margin-top: 3vh;
+    font-size: 1em;
+    color: #00BCB9;
+    border-bottom: solid #00BCB9 2px;
+    box-sizing: border-box;
 }
 
 /* CALENDER STYLING */
+
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 90%;
+    max-width: 400px;
 }
 
 li {
-  list-style-type: none;
-  border: 2px solid grey;
-  color: grey;
+    height: 16vh;
+    ;
+    border: solid grey 4px;
+    box-sizing: border-box;
+    list-style-type: none;
+    color: grey;
+    border-radius: 20px;
+    margin-bottom: 2.25vh;
 }
 
 dd {
-  margin-left: 0;
+    margin-left: 0;
+    padding-left: 4vw;
+}
+
+dl {
+    padding-top: 1vh;
+    padding-left: 2vw;
+}
+
+time {
+    padding-left: 4vw;
+}
+
+.calendar-date {
+    font-size: 4vh;
+}
+
+.calendar-time {
+    font-size: 2vh;
 }
 
 .live {
-  border: 2px solid yellow;
-  color: yellow;
+    border: 2px solid yellow;
+    color: yellow;
 }
 
 /* CHAT STYLING */
 #chat-cont {
-	width:100vw;
-  height: 95vh;
-	position:relative;
-  color: blue;
+    width: 100vw;
+    height: 95vh;
+    position: relative;
+    color: white;
+}
+
+#prompt-chat {
+    width: 92vw;
+    height: 10vh;
+    margin: 0 auto;
+    margin-top: 2.5vh;
+    padding: 4vw;
+    position: relative;
+    color: #322C2E;
+    background: #00BCB9;
 }
 
 #location {
-  height: 10vh;
-  width: 100vw;
-  background-color: blue;
-  position: relative;
-  top: 0;
-  color: white;
+    height: 5vh;
+    width: 92vw;
+    background-color: #322C2E;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 2.5vh;
+    top: 0;
+    color: #00BCB9;
 }
 
 #location-text {
-  font-size: 1em;
-  position: absolute;
- bottom: 0;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    padding-left: 4vw;
+    padding-bottom: 1vh;
 }
 
 #chat-area {
-	height: 80vh;
-  top: 15vh;
-	overflow:auto;
-  border: 1px solid blue;
+    margin: 0 auto;
+    margin-bottom: 2.5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 92vw;
+    height: 60vh;
+    top: 15vh;
+    overflow: auto;
+/*    border: 1px solid #322C2E;*/
 }
+
+/* Turns off focus highlight on textbox */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 
 /* for the username styling */
 /* #chat-area span {
@@ -171,35 +263,41 @@ dd {
 } */
 
 
+/*
 #chat-area p {
-	border-bottom:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
+*/
 
 #name-area {
-	position:absolute;
-	top:12px;
-	right:0;
-	color:#fff;
-	font:bold 12px "Lucida Grande",Sans-Serif;
-	text-align:right;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    color: #fff;
+    font: bold 12px "Lucida Grande", Sans-Serif;
+    text-align: right;
 }
 
 #name-area span {
-	color:#fa9f00;
+    color: #fa9f00;
 }
 
 #sendie {
-	border:1px solid blue;
-	width: 90vw;
-  height: 5vh;
-  float: left;
+    border: 3px solid #F6403A;
+    box-sizing: border-box;
+    padding: 2vw;
+    width: 80vw;
+    height: 40px;
+    float: right;
+    margin-right: 16vw;
+    background-color: transparent;
 }
 
 #send {
-  height: 5vh;
-  width: 10vw;
-  right: 0;
-  position: absolute;
-  background-color: blue;
-  z-index: 1000;
+    height: 40px;
+    width: 12vw;
+    right: 4vw;
+    position: absolute;
+    background-color: #F6403A;
+    z-index: 1000;
 }

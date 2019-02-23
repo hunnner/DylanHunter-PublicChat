@@ -90,21 +90,26 @@
 
 <!--PROMPT-->
 			<div id="prompt">
-				This is the prompt.
+				
 			</div>
 
 <!--CLOCK-->
 			<div id="clock"></div>
 			<div id="clock-text">
-				New topic every 10 minutes.
+				SEE UPCOMING LIVESTREAMS BELOW.
 			</div>
+            
+<!--Link to livestreams-->    
+            <div id="livestream-link">
+                LIVESTREAMS @VOCALIZETOGETHER
+            </div>
 
 <!--CALENDER EVENTS -->
 			<ul class="row block-grid events">
 				<a href="http://instagram.com/thackhamhunter">
 					<li>
 						<dl>
-							<dt><time date="02/20/2019">Feb 20, 2:00PM</time></dt>
+							<dt><time date="02/20/2019"><span class="calendar-date">FEB 20,</span> <span class="calendar-time">1PM - 2PM</span></time></dt>
 							<dd>Dequindre Cut</dd>
 						</dl>
 					</li>
@@ -112,7 +117,7 @@
 				<a href="http://instagram.com/thackhamhunter">
 					<li>
 						<dl>
-							<dt><time date="02/22/2019">Feb 22, 2:00PM</time></dt>
+                            <dt><time date="02/22/2019"><span class="calendar-date">FEB 22,</span> <span class="calendar-time">1PM - 2PM</span></time></dt>
 							<dd class="padding">Lincoln Street Art Park</dd>
 						</dl>
 					</li>
@@ -120,7 +125,7 @@
 				<a href="http://instagram.com/thackhamhunter">
 					<li>
 						<dl>
-							<dt><time date="02/28/2019">Feb 28, 2:00PM</time></dt>
+                            <dt><time date="02/28/2019"><span class="calendar-date">FEB 28,</span> <span class="calendar-time">1PM - 2PM</span></time></dt>
 							<dd>Another Place</dd>
 						</dl>
 					</li>
@@ -130,16 +135,19 @@
 <!--END OF HOMEPAGE-->
 
 <!--SLIDER-->
-		<div id="slider">
-			<div id="slider-text">^</div>
+		<div id="slider" >
+			<div id="slider-text">PARTICIPATE</div>
 		</div>
 
 <!--CHAT-->
 <div id="chat-cont">
-
+    <div id="prompt-chat">
+    
+    </div>
+    
 	<div id="location">
 		<div id="location-text">
-			<b>Location:</b><br> Dequindre Cut
+			LIVE AT DEQUINDRE CUT
 		</div>
 	</div>
 

@@ -3,6 +3,8 @@ $(document).ready(function() {
   // TRANSITION SLIDER
   $('#slider').click(function() {
     $('#homepage').slideToggle(600);
+    $(this).addClass('textToggle');
+    $(this).text($(this).text() == 'SCHEDULE' ? 'PARTICIPATE' : 'SCHEDULE');
   });
 
   // CLOCK
@@ -36,58 +38,65 @@ $(document).ready(function() {
     var date = new Date();
     if (date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 22 && /*Day*/
-      date.getHours() === 18 && /*Hour*/
+      date.getDate() === 23 && /*Day*/
+      date.getHours() === 15 && /*Hour*/
       date.getMinutes() < 10) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "Prompt 1"
+      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 22 && /*Day*/
-      date.getHours() === 18 && /*Hour*/
+      date.getDate() === 23 && /*Day*/
+      date.getHours() === 15 && /*Hour*/
       date.getMinutes() < 20) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "Prompt 2"
+      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
+        
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 22 && /*Day*/
-      date.getHours() === 18 && /*Hour*/
+      date.getDate() === 23 && /*Day*/
+      date.getHours() === 15 && /*Hour*/
       date.getMinutes() < 30) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "Prompt 3"
+      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 22 && /*Day*/
-      date.getHours() === 18 && /*Hour*/
+      date.getDate() === 23 && /*Day*/
+      date.getHours() === 15 && /*Hour*/
       date.getMinutes() < 40) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "Prompt 4"
+      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 22 && /*Day*/
-      date.getHours() === 18 && /*Hour*/
+      date.getDate() === 23 && /*Day*/
+      date.getHours() === 15 && /*Hour*/
       date.getMinutes() < 50) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "Prompt 5"
+      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 22 && /*Day*/
-      date.getHours() === 18 && /*Hour*/
+      date.getDate() === 23 && /*Day*/
+      date.getHours() === 15 && /*Hour*/
       date.getMinutes() > 50) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "Prompt 6"
+      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
 
-    }
+    } 
   }, 1000);
 
 });
