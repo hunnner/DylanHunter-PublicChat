@@ -1,0 +1,205 @@
+/* DON'T DELETE THIS */
+
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Clear Float */
+
+.cf:before,.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* end */
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: white;
+  overflow: hidden;
+}
+
+#homepage {
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+  background-color: blue;
+}
+
+#slider {
+  height: 5vh;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: blue;
+}
+
+#slider-text {
+  padding-top: 20px;
+}
+
+.full {
+  height: 100vh;
+}
+
+.up {
+  height: 40px;
+  transform: rotate(-180deg);
+}
+
+/* #chat-cont {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  position: absolute;
+  top: 0;
+  background-color: white;
+} */
+
+#text-box-cont {
+  height: 5vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  border: solid blue 2px;
+}
+
+#prompt {
+  font-size: 2em;
+}
+
+
+#date-location-cont {
+  height: 55%;
+  width: 80%;
+}
+
+.date-location {
+  height: 30%;
+ margin-bottom: 3.33%;
+  border: 1px solid white;
+}
+
+#clock {
+  text-align: left;
+  font-size: 1.8em;
+}
+
+/* CALENDER STYLING */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  border: 2px solid grey;
+  color: grey;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.live {
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+/* CHAT STYLING */
+#chat-cont {
+	width:100vw;
+  height: 95vh;
+	position:relative;
+  color: blue;
+}
+
+#location {
+  height: 10vh;
+  width: 100vw;
+  background-color: blue;
+  position: relative;
+  top: 0;
+  color: white;
+}
+
+#location-text {
+  font-size: 1em;
+  position: absolute;
+ bottom: 0;
+}
+
+#chat-area {
+	height: 80vh;
+  top: 15vh;
+	overflow:auto;
+  border: 1px solid blue;
+}
+
+/* for the username styling */
+/* #chat-area span {
+	color:#fff;
+	background:#333;
+	padding:4px 8px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:8px;
+	margin:0 5px 0 0;
+} */
+
+
+#chat-area p {
+	border-bottom:1px solid #ccc;
+}
+
+#name-area {
+	position:absolute;
+	top:12px;
+	right:0;
+	color:#fff;
+	font:bold 12px "Lucida Grande",Sans-Serif;
+	text-align:right;
+}
+
+#name-area span {
+	color:#fa9f00;
+}
+
+#sendie {
+	border:1px solid blue;
+	width: 90vw;
+  height: 5vh;
+  float: left;
+}
+
+#send {
+  height: 5vh;
+  width: 10vw;
+  right: 0;
+  position: absolute;
+  background-color: blue;
+  z-index: 1000;
+}
