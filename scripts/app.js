@@ -3,9 +3,25 @@ $(document).ready(function() {
   // TRANSITION SLIDER
   $('#slider').click(function() {
     $('#homepage').slideToggle(600);
-    $(this).addClass('textToggle');
-    $(this).text($(this).text() == 'SCHEDULE' ? 'PARTICIPATE' : 'SCHEDULE');
+    $('#slider-text').text($('#slider-text').text() == 'SCHEDULE' ? 'PARTICIPATE' : 'SCHEDULE');
+    $('#arrow').text($('#arrow').text() == '↓' ? '↑' : '↓');
+    // $('#arrow').toggleClass('flip');
   });
+
+  //  DOMAIN SPEAKER
+  function domainSpeak() {
+    responsiveVoice.speak("participate at shout-together.com");
+  }
+  domainSpeak();
+  setInterval(domainSpeak, 30000);
+
+  //  PROMPT SPEAKER
+  // function domainSpeak() {
+  //   var prompt =
+  //   responsiveVoice.speak("participate at shout-together.com");
+  // }
+  // domainSpeak();
+  // setInterval(domainSpeak, 30000);
 
   // CLOCK
   var myVar = setInterval(function() {
@@ -35,68 +51,86 @@ $(document).ready(function() {
 
   // PROMPT SCHEDULE //
   window.setInterval(function() {
+
     var date = new Date();
     if (date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 23 && /*Day*/
-      date.getHours() === 15 && /*Hour*/
+      date.getDate() === 24 && /*Day*/
+      date.getHours() === 18 && /*Hour*/
       date.getMinutes() < 10) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt').innerHTML = "Do you like me?",
       document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
+      document.getElementById('clock-text').innerHTML = "new topic every 10 minutes";
+      document.getElementById('livestream-link').innerHTML = "livestreaming now @vocalizetogether";
+      document.getElementById('location').innerHTML = "live at dequindre cut";
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 23 && /*Day*/
-      date.getHours() === 15 && /*Hour*/
+      date.getDate() === 24 && /*Day*/
+      date.getHours() === 18 && /*Hour*/
       date.getMinutes() < 20) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt').innerHTML = "How are you?",
       document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
-        
+      document.getElementById('clock-text').innerHTML = "new topic every 10 minutes";
+      document.getElementById('livestream-link').innerHTML = "livestreaming now @vocalizetogether";
+      document.getElementById('location').innerHTML = "live at dequindre cut";
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 23 && /*Day*/
-      date.getHours() === 15 && /*Hour*/
+      date.getDate() === 24 && /*Day*/
+      date.getHours() === 18 && /*Hour*/
       date.getMinutes() < 30) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt').innerHTML = "Communism will prevail?",
       document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
+      document.getElementById('clock-text').innerHTML = "new topic every 10 minutes";
+      document.getElementById('livestream-link').innerHTML = "livestreaming now @vocalizetogether";
+      document.getElementById('location').innerHTML = "live at dequindre cut";
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 23 && /*Day*/
-      date.getHours() === 15 && /*Hour*/
+      date.getDate() === 24 && /*Day*/
+      date.getHours() === 18 && /*Hour*/
       date.getMinutes() < 40) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt').innerHTML = "2Pac is dead?",
       document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
+      document.getElementById('clock-text').innerHTML = "new topic every 10 minutes";
+      document.getElementById('livestream-link').innerHTML = "livestreaming now @vocalizetogether";
+      document.getElementById('location').innerHTML = "live at dequindre cut";
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 23 && /*Day*/
-      date.getHours() === 15 && /*Hour*/
+      date.getDate() === 24 && /*Day*/
+      date.getHours() === 18 && /*Hour*/
       date.getMinutes() < 50) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt').innerHTML = "Cats or Ferrets?",
       document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
+      document.getElementById('clock-text').innerHTML = "new topic every 10 minutes";
+      document.getElementById('livestream-link').innerHTML = "livestreaming now @vocalizetogether";
+      document.getElementById('location').innerHTML = "live at dequindre cut";
 
     } else if (
       date.getYear() === 119 && /*Current year minus 1900*/
       date.getMonth() === 1 && /* January is 0, February is 1 etc*/
-      date.getDate() === 23 && /*Day*/
-      date.getHours() === 15 && /*Hour*/
+      date.getDate() === 24 && /*Day*/
+      date.getHours() === 18 && /*Hour*/
       date.getMinutes() > 50) /*Minute*/ {
 
-      document.getElementById('prompt').innerHTML = "CURRENTLY NOT LIVE.",
+      document.getElementById('prompt').innerHTML = "are octopus aliens from another planet?",
       document.getElementById('prompt-chat').innerHTML = document.getElementById('prompt').innerHTML
+      document.getElementById('clock-text').innerHTML = "new topic every 10 minutes";
+      document.getElementById('livestream-link').innerHTML = "livestreaming now @vocalizetogether";
+      document.getElementById('location').innerHTML = "live at dequindre cut";
 
-    } 
+    }
   }, 1000);
 
 });

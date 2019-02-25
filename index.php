@@ -11,6 +11,8 @@
 	<script src="scripts/jquery.js"></script>
 	<!-- jQuery UI Library -->
 	<script src="scripts/jquery-ui.js"></script>
+	<!-- Animation Library -->
+	<script type="text/javascript" scr="scripts/transit.js"></script>
 	<!-- JS Libraries -->
 	<script src="scripts/plugins.js"></script>
 	<!-- Custom JS Script -->
@@ -84,13 +86,13 @@
 	</script>
 </head>
 
-<body onload="setInterval('chat.update()', 1000)">
+<body onload="setInterval('chat.update()', 1000)" class="no-scroll">
 
-		<div id="homepage" class="full">
-
+		<div id="homepage">
+			<div id="inner-cont">
 <!--PROMPT-->
 			<div id="prompt">
-				
+CURRENTLY NOT LIVE
 			</div>
 
 <!--CLOCK-->
@@ -98,18 +100,19 @@
 			<div id="clock-text">
 				SEE UPCOMING LIVESTREAMS BELOW.
 			</div>
-            
-<!--Link to livestreams-->    
+
+<!--Link to livestreams-->
+					<a href="http://instagram.com/thackhamhunter">
             <div id="livestream-link">
                 LIVESTREAMS @VOCALIZETOGETHER
             </div>
-
+					</a>
 <!--CALENDER EVENTS -->
 			<ul class="row block-grid events">
 				<a href="http://instagram.com/thackhamhunter">
 					<li>
 						<dl>
-							<dt><time date="02/20/2019"><span class="calendar-date">FEB 20,</span> <span class="calendar-time">1PM - 2PM</span></time></dt>
+							<dt><time date="03/01/2019"><span class="calendar-date">MAR. 01,</span> <span class="calendar-time">1PM–2PM</span></time></dt>
 							<dd>Dequindre Cut</dd>
 						</dl>
 					</li>
@@ -117,41 +120,38 @@
 				<a href="http://instagram.com/thackhamhunter">
 					<li>
 						<dl>
-                            <dt><time date="02/22/2019"><span class="calendar-date">FEB 22,</span> <span class="calendar-time">1PM - 2PM</span></time></dt>
-							<dd class="padding">Lincoln Street Art Park</dd>
+                            <dt><time date="03/02/2019"><span class="calendar-date">MAR. 02,</span> <span class="calendar-time">1PM–2PM</span></time></dt>
+							<dd class="padding">Lincoln St. Art Park</dd>
 						</dl>
 					</li>
 				</a>
 				<a href="http://instagram.com/thackhamhunter">
 					<li>
 						<dl>
-                            <dt><time date="02/28/2019"><span class="calendar-date">FEB 28,</span> <span class="calendar-time">1PM - 2PM</span></time></dt>
+                            <dt><time date="03/03/2019"><span class="calendar-date">MAR. 03,</span> <span class="calendar-time">1PM–2PM</span></time></dt>
 							<dd>Another Place</dd>
 						</dl>
 					</li>
 				</a>
 			</ul>
 		</div>
+	</div>
 <!--END OF HOMEPAGE-->
 
 <!--SLIDER-->
 		<div id="slider" >
-			<div id="slider-text">PARTICIPATE</div>
+			<span id="slider-text">PARTICIPATE</span>
+			<span id="arrow">↑</span>
 		</div>
 
 <!--CHAT-->
+<div id="second-page">
 <div id="chat-cont">
     <div id="prompt-chat">
-    
+			prompts are placed here and change every 10 minutes
     </div>
-    
-	<div id="location">
-		<div id="location-text">
-			LIVE AT DEQUINDRE CUT
-		</div>
-	</div>
 
-		<p id="name-area"></p>
+	<div id="location">currently not live</div>
 
 			<div id="chat-area"></div>
 
@@ -160,6 +160,7 @@
 				<div id="send"></div>
 		</form>
 
+</div>
 </div>
 <!--END OF CHAT-->
 

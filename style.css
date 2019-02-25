@@ -10,11 +10,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    margin: 0;
-    background-color: dimgrey; 
-}
-
 /* Clear Float */
 
 .cf:before,
@@ -30,10 +25,26 @@ body {
 }
 
 .cf {
-    *zoom: 1;
+    zoom: 1;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* end */
+
+
+/* Typeface */
+@font-face {
+  font-family: Incido;
+  src: url(dr-incido-bold.woff);
+}
+
+@font-face {
+  font-family: Supply;
+  src: url(Supply-Regular.woff);
+}
 
 [contenteditable]:focus {
     outline: 0px solid transparent;
@@ -41,50 +52,59 @@ body {
 
 body {
     margin: 0;
-    font-family: sans-serif;
-    font-size: 1em;
+    font-family: Supply, monospace;
+    font-size: 2.5vh;
+    letter-spacing: .9;
+    line-height: 1;
+    text-transform: uppercase;
     color: white;
     overflow: hidden;
+    position: fixed;
+    background-color: #322c2e;
+    height: 100%;
+    width: 100%;
 }
 
 #homepage {
-    width: 100vw;
-    height: 92vh;
+    width: 100%;
+    height: 90%;
     position: relative;
     background-color: #322C2E;
-    padding-left: 8vw;
-    padding-top: 4vh;
 }
+
+#inner-cont {
+  padding-left: 8vw;
+  padding-top: 5vh;
+  padding-right: 8vw;
+  padding-bottom: 5vh;
+}
+
+
 
 #slider {
-    height: 8vh;
+    height: 10%;
     width: 100%;
     position: relative;
-    bottom: 0;
+    top: 0%;
     text-align: left;
-    font-size: 3.5vh;
+    font-size: 5vh;
+    font-family: Incido, sans-serif;
     background-color: #F6403A;
+    padding: 2.5vh 8vw 0 8vw;
 }
 
-#slider-text {
-    padding-top: 2vh;
-    padding-bottom: 14px;
-    padding-left: 8vw;
+#arrow {
+    float: right;
 }
 
-.textToggle {
-    padding-top: 2vh;
-    padding-left: 8vw;
+.flip {
+  transform: rotate(180deg);
 }
 
-.full {
-    height: 100vh;
-}
-
-.up {
+/* .up {
     height: 40px;
     transform: rotate(-180deg);
-}
+} */
 
 /* #chat-cont {
   width: 100vw;
@@ -104,9 +124,10 @@ body {
 }
 
 #prompt {
-    font-size: 1.5em;
+    font-size: 5vh;
+    font-family: Incido, sans-serif;
     color: #00BCB9;
-    height: 11vh;
+    height: 12vh;
 }
 
 
@@ -123,25 +144,32 @@ body {
 
 #clock {
     text-align: left;
-    font-size: 1.8em;
+    font-size: 5vh;
+    font-family: Incido, sans-serif;
     color: #F6403A;
 }
 
 #clock-text {
-    font-size: 1.5em;
+    font-size: 5vh;
+    font-family: Incido, sans-serif;
     color: #00BCB9;
 }
 
 #livestream-link {
-    width: 90%;
-    margin-top: 3vh;
-    font-size: 1em;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: .5vh;
+    text-decoration: underline;
     color: #00BCB9;
-    border-bottom: solid #00BCB9 2px;
     box-sizing: border-box;
 }
 
 /* CALENDER STYLING */
+.row {
+    padding: 0;
+    margin: 2.5vh 0 0 0;
+    bottom: 0;
+}
 
 a {
     text-decoration: none;
@@ -150,19 +178,21 @@ a {
 ul {
     list-style-type: none;
     padding: 0;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
 }
 
 li {
-    height: 16vh;
-    ;
+    /* height: auto; */
     border: solid grey 4px;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     list-style-type: none;
     color: grey;
     border-radius: 20px;
-    margin-bottom: 2.25vh;
+    margin-bottom: 2vh;
+    height: 12.5vh;
 }
 
 dd {
@@ -171,8 +201,8 @@ dd {
 }
 
 dl {
-    padding-top: 1vh;
-    padding-left: 2vw;
+    /* padding-top: 1vh;
+    padding-left: 2vw; */
 }
 
 time {
@@ -180,64 +210,54 @@ time {
 }
 
 .calendar-date {
-    font-size: 4vh;
+    font-size: 5vh;
+    font-family: Incido, sans-serif;
 }
 
 .calendar-time {
-    font-size: 2vh;
 }
 
 .live {
-    border: 2px solid yellow;
-    color: yellow;
+    border: 4px solid #F6403A;
+    color: #F6403A;
 }
 
 /* CHAT STYLING */
+#second-page {
+  width: 100%;
+  height: 90%;
+}
+
 #chat-cont {
-    width: 100vw;
-    height: 95vh;
-    position: relative;
-    color: white;
+  padding-left: 4vw;
+  padding-top: 2.5vh;
+  padding-right: 4vw;
+  padding-bottom: 2.5vh;
 }
 
 #prompt-chat {
-    width: 92vw;
+    width: 100%;
+    padding: 2.5vh 4vw 2.5vh 4vw;
     height: 10vh;
-    margin: 0 auto;
-    margin-top: 2.5vh;
-    padding: 4vw;
-    position: relative;
     color: #322C2E;
     background: #00BCB9;
 }
 
 #location {
     height: 5vh;
-    width: 92vw;
+    width: 100%;
     background-color: #322C2E;
     position: relative;
-    margin: 0 auto;
     margin-bottom: 2.5vh;
-    top: 0;
     color: #00BCB9;
-}
-
-#location-text {
-    font-size: 1em;
-    position: absolute;
-    bottom: 0;
-    padding-left: 4vw;
-    padding-bottom: 1vh;
+    padding: 1.25vh 4vw 1.25vh 4vw;
 }
 
 #chat-area {
-    margin: 0 auto;
-    margin-bottom: 2.5vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    width: 92vw;
-    height: 60vh;
-    top: 15vh;
+    width: 100%;
+    height: 67%;
+    margin: 0;
+    padding: 0 4vw 0 4vw;
     overflow: auto;
 /*    border: 1px solid #322C2E;*/
 }
@@ -269,7 +289,7 @@ button:focus {
 }
 */
 
-#name-area {
+/* #name-area {
     position: absolute;
     top: 12px;
     right: 0;
@@ -280,21 +300,24 @@ button:focus {
 
 #name-area span {
     color: #fa9f00;
+} */
+
+#send-message-area {
+    height: 7.5vh;
+    margin: 0;
 }
 
 #sendie {
     border: 3px solid #F6403A;
     box-sizing: border-box;
-    padding: 2vw;
-    width: 80vw;
-    height: 40px;
-    float: right;
-    margin-right: 16vw;
+    width: 86%;
+    height: 7.5vh;
+    float: left;
     background-color: transparent;
 }
 
 #send {
-    height: 40px;
+    height: 7.5vh;
     width: 12vw;
     right: 4vw;
     position: absolute;
